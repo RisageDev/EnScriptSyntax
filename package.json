@@ -2,7 +2,8 @@
   "name": "enscriptsyntax",
   "displayName": "EnScriptSyntax",
   "description": "EnScriptSyntax — The best version of Enforce Script autocomplete and syntax highlighting for DayZ 1.27! Full Enforce Script syntax support. Automatic class and inheritance chain detection. Method suggestions based on parent classes",
-  "version": "0.0.18",
+  "version": "0.0.19",
+  "icon": "icon.png",
   "publisher": "Risage",
   "engines": {
   "vscode": "^1.98.0"

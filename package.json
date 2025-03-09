@@ -1,0 +1,63 @@
+{
+  "name": "enscriptsyntax",
+  "displayName": "EnScriptSyntax",
+  "description": "EnScriptSyntax — The best version of Enforce Script autocomplete and syntax highlighting for DayZ 1.27! Full Enforce Script syntax support. Automatic class and inheritance chain detection. Method suggestions based on parent classes",
+  "version": "0.0.18",
+  "publisher": "Risage",
+  "engines": {
+  "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+        {
+            "id": "enscript",
+            "aliases": [
+                "Enforce Script",
+                "enscript"
+            ],
+            "extensions": [
+                ".c"
+            ],
+            "configuration": "./language-configuration.json"
+        }
+    ],
+    "grammars": [
+        {
+            "language": "enscript",
+            "scopeName": "source.cpp", 
+            "path": "./syntaxes/cpp.tmLanguage.json"
+        }
+    ],
+    "snippets": [
+        {
+            "language": "enscript",
+            "path": "./snippets/enscript-snippets.json"
+        }
+    ],
+    "homepage": "https://github.com/RisageDev/EnScriptSyntax#readme"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "start": "node ./out/extension.js",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "@types/vscode": "^1.98.0",
+    "@vscode/test-electron": "^2.3.0",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "vscode-languageclient": "^9.0.1",
+    "vscode-languageserver": "^9.0.1",
+    "vscode-languageserver-textdocument": "^1.0.12"
+  },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/RisageDev/EnScriptSyntax"
+  }
+}
